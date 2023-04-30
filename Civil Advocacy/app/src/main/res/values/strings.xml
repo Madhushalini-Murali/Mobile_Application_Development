@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Civil Advocacy</string>
+    <string name="address">Succesfully fetched the address</string>
+    <string name="check_location">Location might be incorrect! Please check your location</string>
+    <string name="access_denied">ACCESS IS DENIED</string>
+    <string name="aboutact_link"><u>Google Civic Information API</u></string>
+
+</resources>

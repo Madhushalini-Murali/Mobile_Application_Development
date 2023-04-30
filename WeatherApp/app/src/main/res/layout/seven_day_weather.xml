@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/date_day"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#80737578"
+        android:text="Day and Date"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/high_low_temp"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:text="High and Low Temp"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_day" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.934"
+        app:layout_constraintStart_toEndOf="@+id/high_low_temp"
+        app:layout_constraintTop_toBottomOf="@+id/date_day"
+        tools:srcCompat="@drawable/clear_day" />
+
+    <TextView
+        android:id="@+id/weather_desc"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Description"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/high_low_temp" />
+
+    <TextView
+        android:id="@+id/precipitation"
+        android:layout_width="178dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Precipitation"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weather_desc" />
+
+    <TextView
+        android:id="@+id/uvIndex"
+        android:layout_width="178dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="UV_Index"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/precipitation" />
+
+    <TableRow
+        android:id="@+id/tableRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uvIndex">
+
+        <TextView
+            android:id="@+id/morning_temp"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:text="MorningTemp"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/afternoon_temp"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:text="AfternoonTp"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/evening_temp"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:text="EveningTemp"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/night_temp"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:text="NightTemp"
+            android:textColor="@color/white" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow">
+
+        <TextView
+            android:id="@+id/morningtext"
+            android:layout_width="96dp"
+            android:layout_height="match_parent"
+            android:text="Morning"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/afternoontext"
+            android:layout_width="94dp"
+            android:layout_height="match_parent"
+            android:text="Afternoon"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/eveningtext"
+            android:layout_width="86dp"
+            android:layout_height="match_parent"
+            android:text="Evening"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/nighttext"
+            android:layout_width="91dp"
+            android:layout_height="match_parent"
+            android:text="Night"
+            android:textColor="@color/white" />
+    </TableRow>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

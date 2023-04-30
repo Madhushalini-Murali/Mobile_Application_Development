@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/location_textbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#9C27B0"
+        android:text="location"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/official_imagepic"
+        android:layout_width="125dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="12dp"
+        android:onClick="official_photoClick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/govt_official_party"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/govt_official_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="official_name"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/official_imagepic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/location_textbox" />
+
+    <TextView
+        android:id="@+id/govt_official_office"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="34dp"
+        android:text="govt_official_office"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/official_imagepic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/govt_official_name" />
+
+    <TextView
+        android:id="@+id/govt_official_party"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="15dp"
+        android:text="govt_official_party"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/location_textbox" />
+
+    <ImageView
+        android:id="@+id/party_logo"
+        android:layout_width="47dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginEnd="42dp"
+        android:onClick="party_website"
+        app:layout_constraintBottom_toBottomOf="@+id/official_imagepic"
+        app:layout_constraintEnd_toEndOf="@+id/official_imagepic"
+        app:layout_constraintStart_toStartOf="@+id/official_imagepic"
+        app:srcCompat="@drawable/dem_logo" />
+
+    <TextView
+        android:id="@+id/official_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:text="Address:"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/govt_official_office" />
+
+    <TextView
+        android:id="@+id/full_address_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:onClick="official_addressClick"
+        android:text="full_address_desc"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/official_address"
+        app:layout_constraintStart_toEndOf="@+id/official_address" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:text="Phone:"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/official_address" />
+
+    <TextView
+        android:id="@+id/phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:onClick="official_phnumClick"
+        android:text="phone_number"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/phone"
+        app:layout_constraintStart_toEndOf="@+id/phone" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:text="Email:"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone" />
+
+    <TextView
+        android:id="@+id/email_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:onClick="official_emailClick"
+        android:text="email_address"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/email"
+        app:layout_constraintStart_toEndOf="@+id/email" />
+
+    <TextView
+        android:id="@+id/website"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:text="Website:"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <TextView
+        android:id="@+id/website_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:onClick="official_websitelinkClick"
+        android:text="website_link"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/website"
+        app:layout_constraintStart_toEndOf="@+id/website" />
+
+    <ImageView
+        android:id="@+id/facebook_icon"
+        android:layout_width="57dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="2dp"
+        android:onClick="clicking_facebookicon"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/youtube_icon"
+        app:srcCompat="@drawable/facebook" />
+
+    <ImageView
+        android:id="@+id/twitter_icon"
+        android:layout_width="57dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="5dp"
+        android:onClick="clicking_twittericon"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/youtube_icon"
+        app:layout_constraintTop_toBottomOf="@+id/website_link"
+        app:srcCompat="@drawable/twitter" />
+
+    <ImageView
+        android:id="@+id/youtube_icon"
+        android:layout_width="57dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="5dp"
+        android:onClick="clicking_youtubeicon"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/facebook_icon"
+        app:layout_constraintTop_toBottomOf="@+id/website_link"
+        app:srcCompat="@drawable/youtube" />
+</androidx.constraintlayout.widget.ConstraintLayout>
